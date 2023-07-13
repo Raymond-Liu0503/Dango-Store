@@ -77,7 +77,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ShopContextProvider>
-        <RouterProvider basename={process.env.PUBLIC_URL} router={router} />
+        <RouterProvider basename='/Dango-Store' router={router} />
     </ShopContextProvider>
   </React.StrictMode>
 );
