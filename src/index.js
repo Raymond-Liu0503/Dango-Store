@@ -78,7 +78,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
     <ShopContextProvider>
-        <RouterProvider router={router} />
+        <RouterProvider basename="/Dango-Store" router={router} />
     </ShopContextProvider>
     </HashRouter>
   </React.StrictMode>
