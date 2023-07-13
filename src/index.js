@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
+  HashRouter
 } from "react-router-dom";
 import homePage from './home';
 import StrawberryPage from './strawberryPage';
@@ -75,9 +76,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <HashRouter>
     <ShopContextProvider>
         <RouterProvider router={router} />
     </ShopContextProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 
