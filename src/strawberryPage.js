@@ -230,7 +230,7 @@ const StrawberryPage = () => {
                                 <p style={{'font-size':'18px'}}><b>Total:</b> ${price}</p>
                             </div>
                         </div>
-                        <Link to ='/#/addToCartPage'>
+                        <Link to ='/addToCartPage'>
                             <motion.button whileTap={{ scale: 0.8 }} className={`add-to-cart ${disabled ? 'active' : ''}`} disabled={disabled} onClick={() => {AddItemToCart()}}>Add to Cart</motion.button>
                         </Link>
                     </div>
